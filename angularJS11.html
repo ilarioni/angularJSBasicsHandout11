@@ -186,6 +186,7 @@
     </script>
 
     <h1>AngularJS Global API</h1>
+    <p>angular.lowercase</p>
     <div ng-app="myApp" ng-controller="myCtrl">
         <p>{{ x1 }}</p>
         <p>{{ x2 }}</p>
@@ -199,7 +200,19 @@
         });
     </script>
 
+    <h3> 1 - angular.uppercase()</h3>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <p>{{ x1 }}</p>
+        <p>{{ x2 }}</p>
+    </div>
 
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.x1 = "John";
+            $scope.x2 = angular.uppercase($scope.x1);
+        });
+    </script>
 
 
     
