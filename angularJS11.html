@@ -98,10 +98,25 @@
 
     </div>
 
+    <h3> 7 - apply styles to modified or unmodified forms</h3>
+    <style>
+        form.ng-pristine {
+            background-color:lightblue;
+        }
+        form.ng-dirty {
+            background-color:pink;
+        }
+    </style>
+    <div ng-app="">
+        <form name="myForm">
+            <p>Try writing in the input field:</p>
+            
+            <input name="myName" ng-model="myName" required>
+            
+            <p>The form gets a "ng-dirty" class when the form has been modified, and will therefore turn pink.</p>
+        </form>
 
-
-
-
+    </div>
 
 
     
