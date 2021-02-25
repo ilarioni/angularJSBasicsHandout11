@@ -9,6 +9,20 @@
 </head>
 <body>
     <h1>AngularJS Form Validation</h1>
+    <p>AngularJS can validate input data</p>
+    <h3>1 - required input field</h3>
+
+    <div ng-app="">
+        <p>Try writing in the input field:</p>
+
+        <form name="myForm">
+        <input name="myInput" ng-model="myInput" required>
+        </form>
+
+        <p>The input's valid state is:</p>
+        <h1>{{myForm.myInput.$valid}}</h1>
+    </div>
+
 
     
 </body>
