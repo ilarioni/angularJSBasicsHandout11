@@ -191,6 +191,14 @@
         <p>{{ x2 }}</p>
     </div>
 
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.x1 = "JOHN";
+            $scope.x2 = angular.lowercase($scope.x1);
+        });
+    </script>
+
 
 
 
